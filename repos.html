@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./rep.css">
+</head>
+<body>
+    <a href=index.html>Back to home</a>
+    <script> 
+        linkdisplay();
+        function linkdisplay()
+        {
+          //var grd=document.createElement("grid");
+          var tbl=document.createElement("table");
+          tbl.setAttribute("class","tbtable");
+          
+          var tbody1=document.createElement("tbody");  
+          var tr2=document.createElement("tr");
+          var th1=createtrth("th","<b>tajswathika</b> Add files via upload <hr>");
+          var tr3=document.createElement("tr");
+          var td2=createtrth("td","index.html <hr>");
+          var tr4=document.createElement("tr");
+          var td3=createtrth("td","script.js");
+          
+          tr2.append(th1);
+          tr3.append(td2);
+          tr4.append(td3);
+          tbody1.append(tr2);
+          tbody1.append(tr3);
+          tbody1.append(tr4);
+          tbl.append(tbody1);
+          //frm.append(tbl);
+           document.body.append(tbl);
+           //grd.append(tbl);
+        }
+        function createtrth(elementname, value="")
+{
+  var ele=document.createElement(elementname);
+   ele.innerHTML=value;
+   return ele;
+}
+    </script> 
+</body>
+</html>
